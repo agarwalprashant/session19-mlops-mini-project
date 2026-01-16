@@ -1,0 +1,29 @@
+- create a project repo using cookiecutter
+cookiecutter -c v1 http://github.com/drivendata/cookiecutter-data-science
+
+delete files -› models to model
+
+create venv -> python -m venv myenv -› activate
+
+- git init
+
+create git repo
+
+add remote
+
+push repo to Gi 1b
+
+- Setup mlflow on Dagshub
+
+- run dagshub_setup. py
+
+- Write Exp 1 -› Baseline experiment (https://raw.githubusercontent.com/campusx-official/jupyter-
+masterclass/main/tweet_emotions.csv)
+
+- add miruns to •gitignore
+
+- commit & push
+
+- Write Exp 2
+
+- commit & push Host
