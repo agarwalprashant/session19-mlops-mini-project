@@ -26,7 +26,7 @@ with mlflow.start_run():
   mlflow.log_param('parameter name', 'value')
   mlflow.log_metric('metric name', 1)
 
-  
+
 - run dagshub_setup. py
 
 - Write Exp 1 -› Baseline experiment (https://raw.githubusercontent.com/campusx-official/jupyter-
@@ -39,3 +39,33 @@ masterclass/main/tweet_emotions.csv)
 - Write Exp 2
 
 - commit & push Host
+
+
+- dvc init
+
+- add dvc remote (local)
+dvc remote add -d myremote (local)
+
+- Create a DVC pipeline
+data_ingestion -> data preprocessing -> feature engineering -> model building -> model evaluation
+
+- dvc.yaml + params.yaml
+
+- run dvc repro
+
+- dvc status/git status
+
+- git commit
+
+- dvc push and git push
+
+- remove local remote
+dvc remote list
+dvc remote remove myremote
+
+------------------------------------------------------
+session20 mlops campusx model serving video
+create s3 bucket
+create IAM user
+pip install 'dvc[s3]' awscli
+dvc remote add -d myremote s3://mlops-session20-bucket-1234567890/data
