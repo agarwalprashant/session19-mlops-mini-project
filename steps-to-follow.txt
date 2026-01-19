@@ -69,3 +69,31 @@ create s3 bucket
 create IAM user
 pip install 'dvc[s3]' awscli
 dvc remote add -d myremote s3://mlops-session20-bucket-1234567890/data
+
+
+
+-----------------------------------------------------------
+session26
+# manual
+
+create an ec2 instance
+
+sudo apt-get update
+
+sudo apt-get install -y docker.io
+
+sudo systemctl start docker
+
+sudo systemctl enable docker
+
+sudo docker pull agarwalprashant355/emotion2:latest
+
+sudo docker run -p 80:5000 -e DAGSHUB_PAT=?????? agarwalprashant355/emotion2:latest
+
+AWS security group
+
+
+
+----------------------------------------------------------------------------
+we want to run commands without using sudo(this will us when running through CI)
+sudo usermod -aG docker ubuntu
