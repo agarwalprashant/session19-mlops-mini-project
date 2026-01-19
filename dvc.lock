@@ -44,8 +44,8 @@ stages:
       nfiles: 2
     - path: src/features/feature_engineering.py
       hash: md5
-      md5: a4e2c9d9336aabf06653beacce87912e
-      size: 3770
+      md5: 7f464f204aa866e571728accfdaf3b17
+      size: 3815
     params:
       params.yaml:
         feature_engineering.max_features: 6000
@@ -57,7 +57,7 @@ stages:
       nfiles: 2
     - path: models/vectorizer.pkl
       hash: md5
-      md5: df3d4d559a3aa8d8cd25b3000ad64d9b
+      md5: fe49397a72b0846dc41c18b781ddce85
       size: 169473
   model_building:
     cmd: python src/model/model_building.py
@@ -69,8 +69,8 @@ stages:
       nfiles: 2
     - path: src/model/model_building.py
       hash: md5
-      md5: 4d89bb8181366c524ab585b55705b265
-      size: 2298
+      md5: 9b6254c5209608c3ed37ca91ae7a96ad
+      size: 2375
     outs:
     - path: models/model.pkl
       hash: md5
