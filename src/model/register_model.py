@@ -4,7 +4,6 @@ import json
 import mlflow
 import logging
 import os
-import dagshub
 
 
 # Set up DagsHub credentials for MLflow tracking
