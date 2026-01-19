@@ -25,3 +25,6 @@ python-dateutil>=2.8.0
 
 # MLflow (if needed for model tracking)
 mlflow>=2.0.0
+
+# DVC for pipeline management
+dvc>=3.0.0
